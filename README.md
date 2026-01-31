@@ -1,10 +1,10 @@
 ## Mars Terrain Segmentation
 
-This challenge involved segmenting black and white Mars images into five classes: **Background, Soil, Bedrock, Sand, and Big Rocks**. We built a deep learning model from scratch, optimizing it for the **Mean Intersection over Union (MeanIOU) metric**.
+This challenge involved segmenting Mars surface images into five classes: **Background, Soil, Bedrock, Sand, and Big Rocks**. We built a deep learning model from scratch, optimizing it for the **Mean Intersection over Union (MeanIOU) metric**.
+
+Mars terrain segmentation is challenging due to strong class imbalance, low-resolution grayscale imagery, and subtle visual differences between terrain types, especially for small and rare structures such as Big Rocks. Moreover, images were provided in black and white.
 
 <img src="img/sample.png" alt="Sample segmentation" width="300">
-
-Mars terrain segmentation is challenging due to strong class imbalance, low-resolution grayscale imagery, and subtle visual differences between terrain types, especially for small and rare structures such as Big Rocks. Moreover, as said before, images were black and white.
 
 While designing and implementing our solution, we explored:
 - Dataset cleaning and analysis
