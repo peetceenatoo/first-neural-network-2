@@ -13,7 +13,8 @@ While designing and implementing our solution, we explored:
 - Hyperparameter tuning
 - Loss engineering
 
-For this assignment, transfer learning was not allowed.
+For this assignment, transfer learning was not allowed.<br/>
+
 The model performance was evaluated using Mean Intersection over Union (MeanIOU) on a private test set.
 
 ## Libraries
