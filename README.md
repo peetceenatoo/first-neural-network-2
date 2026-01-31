@@ -4,7 +4,7 @@ This challenge involved segmenting black and white Mars images into five classes
 
 <img src="img/sample.png" alt="Sample segmentation" width="300">
 
-This computer vision challenge focused on semantic segmentation of Mars surface images, assigning each pixel to one of five terrain classes: Background, Soil, Bedrock, Sand, and Big Rocks. Mars terrain segmentation is challenging due to strong class imbalance, low-resolution grayscale imagery, and subtle visual differences between terrain types, especially for small and rare structures such as Big Rocks.
+Mars terrain segmentation is challenging due to strong class imbalance, low-resolution grayscale imagery, and subtle visual differences between terrain types, especially for small and rare structures such as Big Rocks. Moreover, as said before, images were black and white.
 
 While designing and implementing our solution, we explored:
 - Dataset cleaning and analysis
