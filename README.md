@@ -1,38 +1,28 @@
-# Artificial Neural Networks and Deep Learning HW2 - AY 2024/2025
-
-## Challenge: Mars Terrain Segmentation
+## Mars Terrain Segmentation
 
 This challenge involved segmenting Mars terrain images into five classes: **Background, Soil, Bedrock, Sand, and Big Rocks**. We built a deep learning model from scratch, optimizing it for the **Mean Intersection over Union (MeanIOU) metric**.
 
-## Data & Augmentation
+This computer vision challenge focused on semantic segmentation of Mars surface images, assigning each pixel to one of five terrain classes: Background, Soil, Bedrock, Sand, and Big Rocks. Mars terrain segmentation is challenging due to strong class imbalance, low-resolution grayscale imagery, and subtle visual differences between terrain types, especially for small and rare structures such as Big Rocks.
 
-Dataset: **2,615** images, with **110** low-quality images removed. Maintaining the original class distribution provided the best results.
+While designing and implementing our solution, we explored:
+- Dataset cleaning and analysis
+- Data augmentation
+- Custom semantic segmentation architectures
+- Hyperparameter tuning
+- Loss engineering for class imbalance
+- Multi-path feature extraction
+- Challenge-driven optimization strategies
+- The model performance was evaluated using Mean Intersection over Union (MeanIOU) on the official challenge test set.
 
-Key augmentations:
-- Horizontal & vertical flips
-- Exclusion of rotations & zoom to preserve features
+## Libraries
 
-**Performance Boost:** Flipping-based augmentation improved MeanIOU by **1%-6%**.
-
-## Models & Training
-
-**Best Model:** Multipath UNet with:
-- **Multi-path encoders** (Convolutional, Residual, Global Context, Multiscale)
-- **Squeeze-and-Excitation bottleneck** for feature fusion
-- **Focal Loss** with class balancing
-
-**Hyperparameter Tuning:**
-- **Optuna-based optimization** for learning rate, batch size
-- **Best optimizer:** AdamW with weight decay
-
-**Final Results:** MeanIOU **0.74** (Best Submission)
+The core implementation was developed using TensorFlow Keras. We also used NumPy, Matplotlib, and Seaborn for secondary purposes.
+Additional experiments with alternative architectures were conducted using PyTorch. We also used Optuna for automated hyperparameter optimization.
 
 ## More Info
 
 Refer to the [report](report.pdf) and [notebooks](/notebooks).
 
 ## Team
-* [Mattia Piccinato](https://github.com/peetceenatoo)
-* [Matteo Salari](https://github.com/matteo-salari)
-* [Davide Salonico](https://github.com/DavideSalonico)
-* [Federica Topazio](https://github.com/federicatopazio)
+
+I thank my colleagues and friends [Matteo Salari](https://github.com/matteo-salari), [Davide Salonico](https://github.com/DavideSalonico) and [Federica Topazio](https://github.com/federicatopazio) who worked with me on this project.
